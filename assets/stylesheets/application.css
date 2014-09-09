@@ -334,7 +334,7 @@ header.navigation .logo {
 /* line 41, sass/website/_nav.scss */
 header.navigation .logo h1 {
   position: relative;
-  top: -6px;
+  top: -9px;
   padding-left: .3em;
   display: inline-block;
   font-size: .7em;
@@ -345,7 +345,7 @@ header.navigation .logo h1 {
   /* line 41, sass/website/_nav.scss */
   header.navigation .logo h1 {
     position: relative;
-    top: -12px;
+    top: -9px;
     font-size: .4em;
   }
 }
@@ -1275,51 +1275,52 @@ section#contact div.content-area div.contact-box ul li i {
 /* line 209, sass/website/_styles.scss */
 .service i {
   padding: .5em 0;
+  color: #00bbff;
 }
-/* line 212, sass/website/_styles.scss */
+/* line 213, sass/website/_styles.scss */
 .service h4 {
   font-size: 1em;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: underline;
 }
-/* line 219, sass/website/_styles.scss */
+/* line 220, sass/website/_styles.scss */
 .service ul li {
   font-size: .9em;
 }
 
-/* line 225, sass/website/_styles.scss */
+/* line 226, sass/website/_styles.scss */
 .app-link a {
   color: #fff;
   text-decoration: underline;
 }
 
-/* line 230, sass/website/_styles.scss */
+/* line 231, sass/website/_styles.scss */
 div.mobile-logos {
   display: none;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
-  /* line 230, sass/website/_styles.scss */
+  /* line 231, sass/website/_styles.scss */
   div.mobile-logos {
     display: block;
   }
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
-  /* line 237, sass/website/_styles.scss */
+  /* line 238, sass/website/_styles.scss */
   div.logos {
     display: none;
   }
 }
 
-/* line 241, sass/website/_styles.scss */
+/* line 242, sass/website/_styles.scss */
 .full-width {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 249, sass/website/_styles.scss */
+/* line 250, sass/website/_styles.scss */
 .hero {
   background: url("../images/hero.jpg"), -webkit-linear-gradient(10deg, #2c8f99, #2c5999), no-repeat #2c5999 scroll;
   background: url("../images/hero.jpg"), linear-gradient(10deg, #2c8f99, #2c5999), no-repeat #2c5999 scroll;
@@ -1328,34 +1329,34 @@ div.mobile-logos {
   background-size: cover;
 }
 @media screen and (min-width: 20em) {
-  /* line 249, sass/website/_styles.scss */
+  /* line 250, sass/website/_styles.scss */
   .hero {
     display: none;
   }
 }
 @media screen and (min-width: 40em) {
-  /* line 249, sass/website/_styles.scss */
+  /* line 250, sass/website/_styles.scss */
   .hero {
     display: block;
   }
 }
 @media screen and (min-width: 53.75em) {
-  /* line 249, sass/website/_styles.scss */
+  /* line 250, sass/website/_styles.scss */
   .hero {
     display: block;
   }
 }
-/* line 273, sass/website/_styles.scss */
+/* line 274, sass/website/_styles.scss */
 .hero .hero-logo span {
   color: #fff;
   font-size: 5em;
 }
-/* line 276, sass/website/_styles.scss */
+/* line 277, sass/website/_styles.scss */
 .hero .hero-logo span:hover {
   color: #4886b5;
   transition: .5s;
 }
-/* line 283, sass/website/_styles.scss */
+/* line 284, sass/website/_styles.scss */
 .hero .hero-inner {
   max-width: 68em;
   margin-left: auto;
@@ -1377,7 +1378,7 @@ div.mobile-logos {
   display: table;
   clear: both;
 }
-/* line 291, sass/website/_styles.scss */
+/* line 292, sass/website/_styles.scss */
 .hero .hero-inner button {
   border: 1px solid #d6d6d6;
   border-radius: 3px;
@@ -1441,23 +1442,23 @@ div.mobile-logos {
   opacity: 0.5;
   cursor: not-allowed;
 }
-/* line 297, sass/website/_styles.scss */
+/* line 298, sass/website/_styles.scss */
 .hero .hero-inner .hero-copy {
   padding: 2em;
   text-align: center;
 }
-/* line 301, sass/website/_styles.scss */
+/* line 302, sass/website/_styles.scss */
 .hero .hero-inner .hero-copy h1 {
   font-size: 1.6em;
   margin-bottom: 1.5em;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 301, sass/website/_styles.scss */
+  /* line 302, sass/website/_styles.scss */
   .hero .hero-inner .hero-copy h1 {
     font-size: 1.8em;
   }
 }
-/* line 310, sass/website/_styles.scss */
+/* line 311, sass/website/_styles.scss */
 .hero .hero-inner .hero-copy p {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   margin: auto;
@@ -1466,14 +1467,14 @@ div.mobile-logos {
   line-height: 1.4em;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 310, sass/website/_styles.scss */
+  /* line 311, sass/website/_styles.scss */
   .hero .hero-inner .hero-copy p {
     font-size: 1.1em;
     max-width: 80%;
   }
 }
 
-/* line 326, sass/website/_styles.scss */
+/* line 327, sass/website/_styles.scss */
 .back-to-top {
   position: fixed;
   bottom: 2em;
@@ -1486,7 +1487,7 @@ div.mobile-logos {
   padding: 1em;
   display: none;
 }
-/* line 337, sass/website/_styles.scss */
+/* line 338, sass/website/_styles.scss */
 .back-to-top:hover {
   background-color: contrasted(#333);
   webkit-transition: .3s;
