@@ -1,6 +1,6 @@
 ### Codemancode Business Website
 
-Codemancode is built with the following open source technologies:
+Codemancode is a fully responsive single page layout website.  Codemancode is built with the following open source technologies:
 
 * [Bourbon](http://bourbon.io)
 * [Neat](http://neat.bourbon.io/)
