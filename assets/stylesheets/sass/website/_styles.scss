@@ -1,0 +1,342 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+}
+
+img { max-width: 100%; }
+
+section {
+  $aside-padding: 10;
+  $article-padding: $aside-padding;
+  //@include clearfix;
+  @include outer-container;
+  h1 {
+  	text-align: center;
+  }
+  aside {
+  	@include span-columns(3);
+  	border-bottom: 1px solid #eee;
+  	border-right: 1px soild #eee;
+  	padding: $aside-padding;
+  	h3 {
+  	  color: darken($sky-blue, .5);
+  	}
+  }
+  article {
+    @include span-columns(8);
+    border-left: 1px soild #eee;
+  }
+}
+
+section#services {
+  padding: 50px 0;
+  h1 { padding-bottom: 25px; }
+  p {
+    font-weight: lighter;
+    span { 
+      //font-family: $sans-serif;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+}
+
+section#clients {
+  padding: 25px;
+  background-color: #fff;
+  text-align: center;
+}
+
+section#clients h1 {
+  color: #525252;
+}
+
+section#errbit {
+  background-color: #4886b5;
+  
+  div.content-area {
+    text-align: center;
+    @include media($medium-screen) {
+      text-align: left;
+    }
+    
+    padding: 25px;
+    @include span-columns(12);
+    @include media($large-screen) {
+       @include span-columns(12);
+    }
+    div.logo {
+
+      img {
+        width: 50%;
+        display: inline-block;
+      }
+      
+      @include span-columns(12);
+      @include media($large-screen) {
+        @include shift(2);
+        @include span-columns(2);
+      }
+      @include media($medium-screen) {
+        @include shift(2);
+        @include span-columns(2);
+        img {
+          width: 100%;
+          //display: inline-block;
+        }
+      }
+    }
+    div.info {
+      color: #fff;
+      @include media($large-screen) {
+        @include span-columns(6);
+      }
+      @include media($medium-screen) {
+        @include span-columns(4);
+      }
+      h3 { font-family: $sans-serif; padding-bottom: .3em; }
+      p {
+        font-weight: lighter;
+        font-size: 1em;
+        span { 
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+section#team {
+  padding: 25px 0;
+}
+
+section#team h1 {
+  color: #fff;
+}
+
+section#team {
+  max-width: 100%;
+  padding: 50px 0;
+  background-color: #596F7F;
+  div.content-area {
+    padding: 25px 0;
+    @include outer-container;
+    div.headshot {
+      @include shift(1);
+      @include span-columns(3);
+      /*img {
+        height: 10em;
+      }*/
+      text-align: center;
+    }
+    div.info {
+      color: #fff;
+      @include span-columns(6);
+      a {
+        color: #fff;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+section#contact {
+  color: #525252;
+  padding: 25px 0;
+  text-align: center;
+  div.content-area {
+    padding: 15px;
+    div.info {
+      @include span-columns(12);
+      h2 {
+        padding-bottom: .3em;
+      }
+      p {
+        font-size: 1.2em;
+      }
+    }
+    div.contact-box {
+      @include span-columns(12);
+      ul {
+        li {
+          padding: 8px 0;
+          span {
+            font-weight: bold;
+          }
+          i {
+            color: #525252;
+            padding-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+div.service-groups {
+  @include media($small-screen) {
+    @include outer-container;
+  }
+
+  @include media($medium-screen) {
+    @include outer-container;
+    @include shift(2);
+  }
+  
+}
+
+.service {
+
+  @include media($small-screen) {
+    margin-bottom: .5em;
+  }
+  
+  padding: 1em;
+
+  @include span-columns(12);
+  
+  @include media($medium-screen) {
+    @include span-columns(3);
+    @include omega(3n);
+  }
+
+  text-align: center;
+  margin-bottom: 2em;
+
+  i {
+    padding: .5em 0;
+  }
+  h4 {
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+  ul {
+    li {
+      font-size: .9em;
+    }
+  }
+}
+
+.app-link a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+div.mobile-logos {
+  display:none;
+  @include media(min-width 320px max-width 480px, 1) {
+    display:block;
+  }
+}
+
+div.logos { @include media(min-width 320px max-width 480px, 1) {
+    display:none;
+  }}
+
+.full-width {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Hero Image
+
+.hero {
+  @include media($small-screen) {
+    display:none;
+  }
+  @include media($medium-screen) {
+    display:block;
+  }
+   @include media($large-screen) {
+    display:block;
+  }
+  $hero-background-top: darken($base-accent-color, 15); 
+  $hero-background-bottom: adjust-hue($hero-background-top, -30);
+  $hero-color: white;
+  $gradient-angle: 10deg;
+  $hero-image: '../images/hero.jpg';
+
+  @include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
+
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  //padding-bottom: 4em;
+
+  .hero-logo {
+    span {
+      color: #fff;
+      font-size: 5em;
+      &:hover {
+        color: #4886b5;
+        transition: .5s;
+      }
+    }
+  }
+
+  .hero-inner {
+    @include outer-container;
+    @include clearfix;
+    padding: 3em;
+    margin: auto;
+    text-align: center;
+    color: $hero-color;
+
+    button {
+      @include button(simple, $base-background-color);
+      font-size: $base-font-size;
+      outline: none;
+    }
+
+    .hero-copy {
+      padding: 2em;
+      text-align: center;
+      
+      h1 {
+        font-size: 1.6em;
+        margin-bottom: 1.5em;
+
+        @include media($large-screen) {
+          font-size: 1.8em;
+        }
+      }
+
+      p {
+        font-family: $sans-serif;
+        margin: auto;
+        margin-bottom: 2em; 
+        font-weight: 200;
+        line-height: 1.4em;
+
+        @include media($large-screen) {
+          font-size: 1.1em;
+          max-width: 80%;
+        }
+      }
+    }
+  }
+} 
+
+.back-to-top {
+  position: fixed;
+  bottom: 2em;
+  right: 0px;
+  text-decoration: none;
+  color: #000000;
+  background-color: $light-gray;
+  border: 1px solid #ccc;
+  font-size: 12px;
+  padding: 1em;
+  display: none;
+  &:hover {
+    background-color: contrasted($dark-gray);
+    webkit-transition: .3s;
+  }
+}
+ 

@@ -1,0 +1,58 @@
+// Uncomment this for a sticky footer.
+//
+// .wrapper-for-content-outside-of-footer {
+//   min-height: 100%;
+//   height: auto !important;
+//   height: 100%;
+//   margin: 0 auto -4em;
+// }
+
+// html, body {
+//  height: 100%;
+// }
+
+// .footer-2, .push {
+//   height: 17em;
+
+//   @include media($large-screen) {
+//     height: 4em;
+//   }
+// }
+
+
+
+.footer-2 {
+  $base-spacing: 15;
+  $base-accent-color:#62a2d2;
+  $footer-background: desaturate(darken($base-accent-color, 20), 30);
+  $footer-color: white;
+  $footer-link-color: transparentize($footer-color, .6);
+  $footer-disclaimer-color: transparentize($footer-color, .6);
+
+  background: $footer-background;
+  padding: $base-spacing;
+  width: 100%;
+  //height: 5em;
+  text-align: center;
+
+  p {
+    padding:.5em;
+    font-size: .7em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #f4f4f4;
+  }
+
+  .footer-logo {
+    color: desaturate(darken($base-accent-color, 30), 30);
+    font-size: 3em;
+
+    @include media($large-screen) {
+      text-align: center;
+      margin-bottom: 0;
+    }
+  }
+
+  
+
+}
