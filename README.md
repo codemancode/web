@@ -2,4 +2,4 @@
 
 Codemancode is built with the following open source technologies:
 
-* (Bourbon)http://bourbon.io
+* [Bourbon](http://bourbon.io)
